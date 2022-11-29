@@ -2,7 +2,7 @@
 # NOTE: This Repo and Readme is IN PROGRESS...
 ## Problem
 
-Facial recognition is challenging and yet a very useful technology if applied well. 
+Facial recognition is challenging and yet a very useful technology if applied well. _More information is coming...._
 
 ## Aim
 
@@ -43,9 +43,15 @@ The dataset contains headshot photos of people in the plain background from Adob
 
 ## Findings 
 
+Findings from the results will be added here. 
+
 ## Future Improvements
 
+Next steps and the improvement points will be added to this session. 
+
 # Repository Guide
+
+This section will show the links of the related part of the project. 
 
 
 
