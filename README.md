@@ -1,5 +1,5 @@
 # Facial Detection and Recognition for Security Applications
-
+# NOTE: This Repo and Readme is IN PROGRESS...
 ## Problem
 
 Facial recognition is challenging and yet a very useful technology if applied well. 
