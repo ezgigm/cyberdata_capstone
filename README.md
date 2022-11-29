@@ -2,7 +2,7 @@
 # NOTE: This Repo and Readme is IN PROGRESS...
 ## Problem
 
-Facial recognition is challenging and yet a very useful technology if applied well. _More information is coming...._
+Facial recognition is challenging and yet a very useful technology if applied well. __More information is coming....__
 
 ## Aim
 
