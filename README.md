@@ -14,7 +14,12 @@ ArcFace - anti-spoofing techniques
 
 ## Data
 
-The dataset contains headshot photos of people in the plain background from Adobe stock, and can be found in this Drive folder.(add a link)
+The dataset contains headshot photos of people in the plain background from Adobe stock, and can be found in this Drive folder.(https://drive.google.com/drive/folders/1EYGouovWZR1JJCD4Yts7MnSMMDO3ODu4?usp=share_link)
+The test dataset contains headshot, half and full body shot photos of Chinese people in the various background from V3 dataset, and can be found in this Drive folder. (https://drive.google.com/drive/folders/1Y8Ykn1fGMD9NmBSSyFeTHqSvKEb7Ru0h?usp=share_link)
+
+## Checkpoints
+
+The checkpoint file can be found in this Drive folder. (https://drive.google.com/drive/folders/1j0rRVoSuOvnCuP6bIaXP1XNnaaq_2sf4?usp=share_link)
 
 ## Methodology
 
