@@ -19,9 +19,9 @@ The dataset contains headshot photos of people in the plain background from Adob
 ## Methodology
 
 1. Preprocessing
-    *Facial detection and cropping
-    *Facial alignment 
-    *Uniform resizing 
+    * Facial detection and cropping
+    * Facial alignment 
+    * Uniform resizing 
  
 Verification
  Anti-spoofing
