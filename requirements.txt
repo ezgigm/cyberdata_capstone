@@ -1,3 +1,12 @@
-This file is for required libraries. 
+# For Anti-spoofing
+sklearn
+cv2
 
-In progrèss...
+# For ArcFace-tf2
+PIL
+tensorflow-gpu==2.1.0
+opencv-python==4.1.1.26
+bcolz==1.2.1
+sklearn2
+PyYAML
+tqdm
