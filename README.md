@@ -1,16 +1,19 @@
 # Facial Detection and Recognition for Security Applications
 # NOTE: This Repo and Readme is IN PROGRESS...
+
+## Introduction
+
+Computer vision has many applications from a security standpoint. Facial recognition is one of the most common applications of computer vision. It is widely used for biometric identification. Face recognition is commonly used to unlock phones, access smart phone applications which contain personal information like bank apps, health record apps, etc., access to buildings such as offices and high-security facilities, to compare the passport photo with the holder’s face at the border checkpoints, to identify the criminal in the crowd, to give access to only authorized people in defense services as security precautions. 
+
 ## Problem
 
-Facial recognition is challenging and yet a very useful technology if applied well. __More information is coming....__
+Although it might be more difficult to hack biometric identification than passwords in most cases, face recognition is still a challenging technology because it can be hacked in different ways.Facial spoofing is a popular risk of facial recognition systems. For example, if there isn't live video detection, it is a challenge to differentiate the people’s faces rather than photos of these people. Besides, sometimes it needs consistent lighting, positioning and resolution.
+
+In this project, we focused on the photo spoofing method because it is widely used by the security systems and it is more easy to break the photo security than live methods like video. Most of the video and high-level live detection technologies are very expensive for the users. So, we want to focus on the cheapest and widely available one to find a solution to the spoofing problem and make a robust face detection system.
 
 ## Aim
 
-In this project, we aimed to make a robust facial recognition system using state of the art models and methods to achieve high performance and solve the problem of spoofing. 
-
-## Solution
-
-ArcFace - anti-spoofing techniques
+Our aim in this project is to make a robust facial recognition system by using state of the art models to achieve high performance and solve the problem of spoofing. Our goal is to answer the question of how we can authenticate a user with high accuracy and detect the spoofing activities. 
 
 ## Data
 
@@ -33,27 +36,41 @@ The checkpoint file can be found in this Drive folder. (https://drive.google.com
 ## Methodology
 
 1. Preprocessing
-    * Facial detection and cropping
-    * Facial alignment 
-    * Uniform resizing 
+
+Stock images of passport-like photos were collected from adobe stock. To improve the reliability of the system we aimed to use as uniform photos as possible. We used uniform photos like a passport or driver license style with a plain background. Also, we gave importance to using the images that are the representative of all racial ethnicities. We wanted to use diverse data from the ethnicity perspective. Additionally, our dataset has a balance of genders and age groups. We used black and white prints because the LBP algorithm needs images to be in grayscale rather than color. Also, original color images were converted to greyscale. 
+
+Original photo images were labeled as “Photo” and black-white printouts of original images were labeled as “Print”. Also, these print images needed to be resized to match the original photo pixel dimensions, so we resized them down by a factor of approximately 1000.  For example, the original dimensions of print photos were 4000 by 3200 pixels for each photo, at these dimensions, our LBP algorithm would be severely slowed down and thus pixels were resized to values between 300-400 by 300-400. The original Photo images were also in this range as well(300-400 by 300-400)
+
+ 2. Data Augmentation 
  
-2. Verification : Anti-spoofing
-    * At this stage, we will detect texture as either image or printed image. This helps us to differentiate the real person and the printed photo of the person. 
-    * In order to create a reasonable larger dataset for our model to learn, data augmentation was needed
-      * For photo images
-         * Horizontal and vertical flips
-         * 90 degree and -90 degree rotations
-      * For print images
-         * Auto enhance
-         * Horizontal and vertical flips 
-         * 90 degree and -90 degree rotations
-   * LBP algorithm will be used to get feature vectors distinct to each texture
-      * SVM or other models will learn features in order to classify whether this is an image or a printed paper
-   * Hyperparameter tuning
- 
-3. Matching
-   * Arcface: State of the art method that uses a special loss function called Additive Angular Margin penalty, it will do the facial recognition
- ArcFace head with ResNet backbone, and a function that detect the distance between two images so that it can classify if the person is registered or not.
+Data augmentation was performed to have a larger dataset, based on the principle that a larger dataset will better test the model. The techniques that we used:
+Auto-enhancement or brightening of the image
++90 degree and  -90 degree rotations
+Vertical and horizontal flips (flips image on x-axis and y-axis respectively)
+For train dataset: 
+Vertical and horizontal flips (flips image on x-axis and y-axis respectively)
++90 degree and  -90 degree rotations
+
+These augmentation techniques helped us to have a larger dataset and give us a chance to test our algorithm in different ways like different angles and rotations. 
+
+After augmentation the train and test set had 1093 images and 248 images respectively. This is an approximately 80% to 20% split of the total 1341 images. 
+
+3. Local Binary Patterns (LBP)
+
+We used local binary patterns to differentiate between original photos and printed images. Local binary patterns is a texture classifier based on a gray scale co-occurrence matrix that computes a local representation of texture in an image.
+
+4. Histogram
+
+After local binary patterns, we create feature vectors to see if there is a difference between the digital photo and the printed(paper). We plot them on the histogram to notice the difference. The LBP algorithm histogram gives us the frequency of the normalized features and we can see distinct features for each category. These histograms can be found in Results & Discussion sessions with detailed explanations. 
+
+5. Lazy Prediction and LDA
+
+We use lazy predict classification to do multiple classification models. We get 100% accuracy for certain models. So, to prevent overfitting, in this case we considered using K-fold cross validation to get a more accurate result. And, we performed k-fold cross validation to get a better understanding of the performance of our model.
+
+One of the best performers was RidgeClassfiers, which is a classifier that uses ridge regression and the other was LinearDiscriminantAnalysis(LDA). Ridge regression uses a bias fit of line through the training data that produces less variance and the LDA model finds the direction of maximum class separation. Besides, LDA works to reduce variance like Ridge regression did.
+
+6. Matching : ArcFace
+Arcface is a state of the art method that uses a special loss function called Additive Angular Margin penalty, it will do the facial recognition ArcFace head with ResNet backbone, and a function that detect the distance between two images so that it can classify if the person is registered or not. We used ArcFace modeling to find the similarity between two faces to give an access to the user or not. The certain threshold is defined to let the user access with the similarity value. 
 
 ## Findings 
 
@@ -61,7 +78,14 @@ Findings from the results will be added here.
 
 ## Future Improvements
 
-Next steps and the improvement points will be added to this session. 
+- To improve the reliability of the model, video detection can be used.
+- Another option that might work very well is the combination of anti-spoofing solutions such that eye blink detection can be added to LBP, and the combination of these two methods will be used. Active flash also might be added to this combination to make it more strong. 
+- Although we used as uniform photos as possible, the unnecessary artifacts in the images can also cause overfitting and reduce the reliability of the system. To improve the reliability of the system, we can improve the uniformity of the data sets. We can work on the balance of the detailed artifacts in train and test sets. 
+- We can work to improve the randomization of the splitting to address that the accuracy of the test set is higher than the accuracy of the train set.
+- Another future work might be the demo web app to represent the project in application and to show the connection between anti-spoofing and ArcFace modeling output. 
+- For the ArcFace model, fine-tuning on more data can be done for future work, specifically on Asian faces. Because, pre-trained ArcFace is trained on celebrities data and the majority of the data contains American celebrity faces. So, if the model will be fine-tuned on more Asian faces, the accuracy of the results might increase. 
+- Also future work should include use of inkjet printers as inkjets can have dpi of up to 5000 dpi as of date, this will better test the performance of the model. More greyscale data augmentation techniques like 45 degree rotations or random degree rotations, as well as shifting augmentation should be applied to increase the dataset.
+
 
 # Repository Guide
 
