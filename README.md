@@ -96,21 +96,24 @@ Findings from the results will be added here.
 
 ## Repository Guide
 
-### Augmented Data for Anti-Spoofing 
+#### Augmented Data for Anti-Spoofing 
 
-It can be found [here](https://github.com/ezgigm/cyberdata_capstone/blob/main/dataset%20for%20anti-spoofing.zip)
+It can be found [here.](https://github.com/ezgigm/cyberdata_capstone/blob/main/dataset%20for%20anti-spoofing.zip)
 
-### Notebooks
+#### Notebooks
 
 [Anti-spoofing](https://github.com/ezgigm/cyberdata_capstone/blob/main/Texture_classifier_for_Print_or_Photo.ipynb)
 [ArcFace](https://github.com/ezgigm/cyberdata_capstone/blob/main/Arcface_modeling.ipynb)
 
+#### Deliverables
+[Blog post of this project]
+[Poster]
 
-### Pre-trained ArcFace Model with its Licences
+#### Pre-trained ArcFace Model with its Licences
 
-The code if reused from an open source project, so the original repo of the ArcFace model can be found [here](https://github.com/ezgigm/cyberdata_capstone/tree/main/arcface-tf2)
+The code if reused from an open source project, so the original repo of the ArcFace model can be found [here.](https://github.com/ezgigm/cyberdata_capstone/tree/main/arcface-tf2)
 
-### For the reqirements of Reproduction 
+#### For the reqirements of Reproduction 
 [Requirements](https://github.com/ezgigm/cyberdata_capstone/blob/main/requirements.txt)
 
 
