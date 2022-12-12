@@ -86,17 +86,34 @@ Findings from the results will be added here.
 
 # Repository Guide & How to Use This Repo
 
-Reproduction:
+## Reproduction:
 
-Clone this repo (for help [see this tutorial.](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).)
-Sample data is available in this repo, notebooks can be run with this sample data. - change
+1. Download the adobe stock photos and Chinese people's test data from the drive that is given and explained in detail in the Data and Access session. 
+2. Clone this repo (for help [see this tutorial.](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository))
+3. Open the 'zip' file of the augmented images. 
+4. Run the [Texture_classifier_for_Print_or_Photo.ipynb](https://github.com/ezgigm/cyberdata_capstone/blob/main/Texture_classifier_for_Print_or_Photo.ipynb) notebook for anti-spoofing part. 
+5. Run the [Arcface_modeling.ipynb](https://github.com/ezgigm/cyberdata_capstone/blob/main/Arcface_modeling.ipynb) for the ArcFace model. 
+
+## Repository Guide
+
+### Augmented Data for Anti-Spoofing 
+
+It can be found [here](https://github.com/ezgigm/cyberdata_capstone/blob/main/dataset%20for%20anti-spoofing.zip)
+
+### Notebooks
+
+[Anti-spoofing](https://github.com/ezgigm/cyberdata_capstone/blob/main/Texture_classifier_for_Print_or_Photo.ipynb)
+[ArcFace](https://github.com/ezgigm/cyberdata_capstone/blob/main/Arcface_modeling.ipynb)
 
 
-This section will show the links of the related part of the project. 
+### Pre-trained ArcFace Model with its Licences
 
-should review: 
-A data access statement indicating how to access the data or explaining who owns the data
-In-line code attributions for any code segments your team did not write or received external assistance to create. If code is reused from an open source project, licenses are respected.
+The code if reused from an open source project, so the original repo of the ArcFace model can be found [here](https://github.com/ezgigm/cyberdata_capstone/tree/main/arcface-tf2)
+
+### For the reqirements of Reproduction 
+[Requirements](https://github.com/ezgigm/cyberdata_capstone/blob/main/requirements.txt)
+
+
 
 
 
