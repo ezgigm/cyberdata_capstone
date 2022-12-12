@@ -18,21 +18,11 @@ Our aim in this project is to make a robust facial recognition system by using s
 
 ## Data and Access 
 
-The dataset contains headshot photos of people in the plain background from Adobe stock, and can be found in this Drive folder.(https://drive.google.com/drive/folders/1EYGouovWZR1JJCD4Yts7MnSMMDO3ODu4?usp=share_link)
-The test dataset contains headshot, half and full body shot photos of Chinese people in the various background from V3 dataset, and can be found in this Drive folder. (https://drive.google.com/drive/folders/1Y8Ykn1fGMD9NmBSSyFeTHqSvKEb7Ru0h?usp=share_link)
+The dataset contains headshot photos of people in the plain background from [Adobe stock](https://stock.adobe.com/search?k=passport+photos&search_type=usertyped ). The publicly open passport style photos were searched and the photos of people that is used for anti-spoofing part can be found [in this Drive folder.](https://drive.google.com/drive/folders/1EYGouovWZR1JJCD4Yts7MnSMMDO3ODu4?usp=share_link)
 
-The dataset contains headshot photos of people in the plain background from Adobe stock, and can be found in this Drive folder. The ‘zip’ file of augmented images of this dataset can be found in this Github repository. It can be downloaded by clicking ‘view raw’ colored text on the page. 
+Data augmentation was applied to these photos and the augmented photos can be found [here](https://github.com/ezgigm/cyberdata_capstone/blob/main/dataset%20for%20anti-spoofing.zip) in this repo. The size of the photos are very high so 'zip' file was added to this repo. To use this augmented photos, it can be downloaded by clicking ‘view raw’ colored text on the page.
 
-For ArcFace model, the test dataset contains headshot, half and full body shot photos of Chinese people in the various backgrounds from V3 dataset, and can be found in this Drive folder. ArcFace is the pre-trained model, and the celebrity dataset used for training purposes.  
-
-CelebA: http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
-Chinese : http://www.cbsr.ia.ac.cn/users/xiangyuzhu/projects/LBL/main.htm
-
-https://stock.adobe.com/search?k=passport+photos&search_type=usertyped 
-
-## Checkpoints
-
-The checkpoint file can be found in this Drive folder. (https://drive.google.com/drive/folders/1j0rRVoSuOvnCuP6bIaXP1XNnaaq_2sf4?usp=share_link)
+For ArcFace model, the test dataset contains headshot, half and full body shot photos of Chinese people in the various backgrounds from V3 dataset, and can be found [in this Drive folder.](https://drive.google.com/drive/folders/1Y8Ykn1fGMD9NmBSSyFeTHqSvKEb7Ru0h?usp=share_link). The main source of the test dataset is [here](http://www.cbsr.ia.ac.cn/users/xiangyuzhu/projects/LBL/main.htm). It can also be downloaded form here. ArcFace is the pre-trained model, and the celebrity dataset used for training purposes. We didn't use this dataset directly because the model was already trained, but it can be found [here](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) to see the photos.   
 
 ## Methodology
 
@@ -73,6 +63,10 @@ One of the best performers was RidgeClassfiers, which is a classifier that uses 
 6. Matching : ArcFace
 
 Arcface is a state of the art method that uses a special loss function called Additive Angular Margin penalty, it will do the facial recognition ArcFace head with ResNet backbone, and a function that detect the distance between two images so that it can classify if the person is registered or not. We used ArcFace modeling to find the similarity between two faces to give an access to the user or not. The certain threshold is defined to let the user access with the similarity value. 
+
+## Checkpoints
+
+The checkpoint file can be found in this [Drive folder.](https://drive.google.com/drive/folders/1j0rRVoSuOvnCuP6bIaXP1XNnaaq_2sf4?usp=share_link)
 
 ## Findings 
 
