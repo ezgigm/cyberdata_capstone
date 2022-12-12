@@ -1,5 +1,6 @@
 # Facial Detection and Recognition for Security Applications
-# NOTE: This Repo and Readme is IN PROGRESS...
+
+This project is done by Ali Arefi-Anbarani, Ezgi Gumusbas and Yujin Lee. 
 
 ## Introduction
 
@@ -15,7 +16,7 @@ In this project, we focused on the photo spoofing method because it is widely us
 
 Our aim in this project is to make a robust facial recognition system by using state of the art models to achieve high performance and solve the problem of spoofing. Our goal is to answer the question of how we can authenticate a user with high accuracy and detect the spoofing activities. 
 
-## Data
+## Data and Access 
 
 The dataset contains headshot photos of people in the plain background from Adobe stock, and can be found in this Drive folder.(https://drive.google.com/drive/folders/1EYGouovWZR1JJCD4Yts7MnSMMDO3ODu4?usp=share_link)
 The test dataset contains headshot, half and full body shot photos of Chinese people in the various background from V3 dataset, and can be found in this Drive folder. (https://drive.google.com/drive/folders/1Y8Ykn1fGMD9NmBSSyFeTHqSvKEb7Ru0h?usp=share_link)
@@ -70,6 +71,7 @@ We use lazy predict classification to do multiple classification models. We get 
 One of the best performers was RidgeClassfiers, which is a classifier that uses ridge regression and the other was LinearDiscriminantAnalysis(LDA). Ridge regression uses a bias fit of line through the training data that produces less variance and the LDA model finds the direction of maximum class separation. Besides, LDA works to reduce variance like Ridge regression did.
 
 6. Matching : ArcFace
+
 Arcface is a state of the art method that uses a special loss function called Additive Angular Margin penalty, it will do the facial recognition ArcFace head with ResNet backbone, and a function that detect the distance between two images so that it can classify if the person is registered or not. We used ArcFace modeling to find the similarity between two faces to give an access to the user or not. The certain threshold is defined to let the user access with the similarity value. 
 
 ## Findings 
@@ -87,9 +89,14 @@ Findings from the results will be added here.
 - Also future work should include use of inkjet printers as inkjets can have dpi of up to 5000 dpi as of date, this will better test the performance of the model. More greyscale data augmentation techniques like 45 degree rotations or random degree rotations, as well as shifting augmentation should be applied to increase the dataset.
 
 
-# Repository Guide
+# Repository Guide & How to Use This Repo
 
 This section will show the links of the related part of the project. 
+
+should review: 
+A data access statement indicating how to access the data or explaining who owns the data
+In-line code attributions for any code segments your team did not write or received external assistance to create. If code is reused from an open source project, licenses are respected.
+
 
 
 
