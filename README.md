@@ -96,7 +96,7 @@ Findings from the results will be added here.
 
 ### Repository Guide
 
-#### Augmented Data for Anti-Spoofing 
+- #### Augmented Data for Anti-Spoofing 
 
 It can be found [here.](https://github.com/ezgigm/cyberdata_capstone/blob/main/dataset%20for%20anti-spoofing.zip)
 
