@@ -17,6 +17,15 @@ ArcFace - anti-spoofing techniques
 The dataset contains headshot photos of people in the plain background from Adobe stock, and can be found in this Drive folder.(https://drive.google.com/drive/folders/1EYGouovWZR1JJCD4Yts7MnSMMDO3ODu4?usp=share_link)
 The test dataset contains headshot, half and full body shot photos of Chinese people in the various background from V3 dataset, and can be found in this Drive folder. (https://drive.google.com/drive/folders/1Y8Ykn1fGMD9NmBSSyFeTHqSvKEb7Ru0h?usp=share_link)
 
+The dataset contains headshot photos of people in the plain background from Adobe stock, and can be found in this Drive folder. The ‘zip’ file of augmented images of this dataset can be found in this Github repository. It can be downloaded by clicking ‘view raw’ colored text on the page. 
+
+For ArcFace model, the test dataset contains headshot, half and full body shot photos of Chinese people in the various backgrounds from V3 dataset, and can be found in this Drive folder. ArcFace is the pre-trained model, and the celebrity dataset used for training purposes.  
+
+CelebA: http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
+Chinese : http://www.cbsr.ia.ac.cn/users/xiangyuzhu/projects/LBL/main.htm
+
+https://stock.adobe.com/search?k=passport+photos&search_type=usertyped 
+
 ## Checkpoints
 
 The checkpoint file can be found in this Drive folder. (https://drive.google.com/drive/folders/1j0rRVoSuOvnCuP6bIaXP1XNnaaq_2sf4?usp=share_link)
