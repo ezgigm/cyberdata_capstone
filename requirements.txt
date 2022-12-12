@@ -1,6 +1,9 @@
 # For Anti-spoofing
 sklearn
 cv2
+matplotlib
+seaborn
+statistics
 
 # For ArcFace-tf2
 PIL
