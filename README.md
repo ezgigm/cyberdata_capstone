@@ -84,9 +84,9 @@ Findings from the results will be added here.
 - Also future work should include use of inkjet printers as inkjets can have dpi of up to 5000 dpi as of date, this will better test the performance of the model. More greyscale data augmentation techniques like 45 degree rotations or random degree rotations, as well as shifting augmentation should be applied to increase the dataset.
 
 
-# Repository Guide & How to Use This Repo
+## Repository Guide & How to Use This Repo
 
-## Reproduction:
+### Reproduction:
 
 1. Download the adobe stock photos and Chinese people's test data from the drive that is given and explained in detail in the Data and Access session. 
 2. Clone this repo (for help [see this tutorial.](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository))
@@ -94,7 +94,7 @@ Findings from the results will be added here.
 4. Run the [Texture_classifier_for_Print_or_Photo.ipynb](https://github.com/ezgigm/cyberdata_capstone/blob/main/Texture_classifier_for_Print_or_Photo.ipynb) notebook for anti-spoofing part. 
 5. Run the [Arcface_modeling.ipynb](https://github.com/ezgigm/cyberdata_capstone/blob/main/Arcface_modeling.ipynb) for the ArcFace model. 
 
-## Repository Guide
+### Repository Guide
 
 #### Augmented Data for Anti-Spoofing 
 
