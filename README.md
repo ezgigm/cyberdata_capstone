@@ -2,7 +2,7 @@
 
 This project is done by Ali Arefi-Anbarani, Ezgi Gumusbas and Yujin Lee. 
 
-The report of this project can be found [here.]
+The report of this project can be found [here.](https://github.com/ezgigm/cyberdata_capstone/blob/main/Capstone%20Report%20(1).pdf)
 
 The poster of this project can be found [here.](https://github.com/ezgigm/cyberdata_capstone/blob/main/poster_final.pdf)
 
@@ -138,7 +138,7 @@ Normally, when we get a 100% accuracy on a train set, it might be considered to 
 
 - #### Deliverables
 
-  [Blog post of this project]
+  [Blog post of this project](https://github.com/ezgigm/cyberdata_capstone/blob/main/Capstone%20Report%20(1).pdf)
 
   [Poster](https://github.com/ezgigm/cyberdata_capstone/blob/main/poster_final.pdf)
 
