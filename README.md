@@ -73,7 +73,7 @@ The checkpoint file can be found in this [Drive folder.](https://drive.google.co
 ![Screenshot](anti_spoofing_result_photos/matrix.png )
 
 
-<img src="anti_spoofing_result_photos/matrix.png" width="300" height="400">
+<img src="anti_spoofing_result_photos/matrix.png" width="400" height="300">
 
 Findings from the results will be added here. 
 
