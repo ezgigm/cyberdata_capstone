@@ -70,21 +70,30 @@ The checkpoint file can be found in this [Drive folder.](https://drive.google.co
 
 ## Findings 
 
+### LBP
 
 <img src="anti_spoofing_result_photos/download-1.png" width="400" height="300">
 
 <img src="anti_spoofing_result_photos/download.png" width="400" height="300">
 
-tsne
+These figures show how the vector values of the images are distributed by frequency. X-axis represents the values of features of the vector and y-axis represents the frequency of them. 
+As it is seen from the figures, the original images vector distribution is very different from printed images’ vector distribution. It proves that LBP did a good job on texture differences. Although the distribution of feature values between 0.0 and 0.1 looks similar, the right side of the distribution is totally different. In real images, the right side tail is distributed between 0.2-0.3, but in the printed photos, the right tail is distributed between 0.4-0.5 mostly. This gives a distinct separation of original images and printed photos. Photos vs print observations are well separated in the feature space. 
+
+### t-SNE
+
 <img src="anti_spoofing_result_photos/Picture1.png" width="400" height="300">
 
 <img src="anti_spoofing_result_photos/Picture2.png" width="400" height="300">
 
-matrix
+From these observations, we can see the clear clustering as expected, especially in the training set, this is with maximum perplexity and we got similar results from lower perplexity values. In this chart, blue points represent the print photos and orange points represent the original photos and except a few points the distinction between the oranges and blues are very clear in training data. X and y axis show the dimensions 1 and 2, respectively. In test data, although it is not as clear as the training data, there are still distinct points that blues are in the upper portion and oranges are in the lower portion of the invisible separation line. 
+
+### LDA
+
+
 
 <img src="anti_spoofing_result_photos/matrix.png" width="400" height="300">
 
-Findings from the results will be added here. 
+
 
 ## Future Improvements
 
