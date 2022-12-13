@@ -109,7 +109,7 @@ We experimented with various thresholds, and as a result, the best result was ob
 
 ### Face To Face Similarity Matrix
 
-<img src="arcface_results_photos/Screen Shot 2022-12-12 at 10.14.56 PM.png" width="800" height="400">
+<img src="arcface_results_photos/Screen Shot 2022-12-12 at 10.14.56 PM.png" width="900" height="400">
 
 In this photo matrix, the green box shows the correct person that matches. 0 (zero) values show the same photo, and as expected in the matrix it is diagonal. The important part is that lower than a certain threshold means it is the same person. So, when the value is decreasing, it means that the similarity between two faces are increasing. Model catches the similarities below a certain threshold. There is one exception here that models find 6th and 7th photos a bit similar also, although they are not the same person. Other than that, when we look at the results row by row, we can see that the lower results point to the same person and model did a good job on this. 
 
