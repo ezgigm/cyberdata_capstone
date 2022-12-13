@@ -69,7 +69,7 @@ Arcface is a state of the art method that uses a special loss function called Ad
 The checkpoint file can be found in this [Drive folder.](https://drive.google.com/drive/folders/1j0rRVoSuOvnCuP6bIaXP1XNnaaq_2sf4?usp=share_link)
 
 ## Findings 
-
+![Screenshot](anti_spoofing_result_photos/matrix.png)
 
 Findings from the results will be added here. 
 
