@@ -4,7 +4,7 @@ This project is done by Ali Arefi-Anbarani, Ezgi Gumusbas and Yujin Lee.
 
 The report of this project can be found [here.]
 
-The poster of this project can be found [here.]
+The poster of this project can be found [here.](https://github.com/ezgigm/cyberdata_capstone/blob/main/poster_final.pdf)
 
 ## Introduction
 
@@ -140,7 +140,7 @@ Normally, when we get a 100% accuracy on a train set, it might be considered to 
 
   [Blog post of this project]
 
-  [Poster]
+  [Poster](https://github.com/ezgigm/cyberdata_capstone/blob/main/poster_final.pdf)
 
 - #### Pre-trained ArcFace Model with its Licences
    The code is reused from an open source project, so the original repo of the ArcFace model can be found [here.](https://github.com/ezgigm/cyberdata_capstone/tree/main/arcface-tf2)
