@@ -93,6 +93,9 @@ From these observations, we can see the clear clustering as expected, especially
 
 <img src="anti_spoofing_result_photos/matrix.png" width="400" height="300">
 
+Confusion matrix shows the actual and predicted results of the model. False positives and false negatives can be seen from the confusion matrix easily. In our results, it is seen that LDA on the test set predicts all photos as photo and predicts all prints as print in the test. 
+
+Normally, when we get a 100% accuracy on a train set, it might be considered to be overfitting, but in this project it can be 100% accuracy on a test set, because we checked the projection of our data and there was already a distinct separation between feature vectors of photos and prints. So, the prints and photos can be predicted perfectly. Also, LDA projections maximize the distances between different classes, it does this by maximizing the component class axes for class separation. In other words, it gets a more separate distribution between the classes on that axis. So, it performed well in this project. 
 
 
 ## Future Improvements
