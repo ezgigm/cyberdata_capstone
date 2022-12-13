@@ -2,6 +2,10 @@
 
 This project is done by Ali Arefi-Anbarani, Ezgi Gumusbas and Yujin Lee. 
 
+The report of this project can be found [here.]
+
+The poster of this project can be found [here.]
+
 ## Introduction
 
 Computer vision has many applications from a security standpoint. Facial recognition is one of the most common applications of computer vision. It is widely used for biometric identification. Face recognition is commonly used to unlock phones, access smart phone applications which contain personal information like bank apps, health record apps, etc., access to buildings such as offices and high-security facilities, to compare the passport photo with the holder’s face at the border checkpoints, to identify the criminal in the crowd, to give access to only authorized people in defense services as security precautions. 
