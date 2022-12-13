@@ -122,7 +122,7 @@ Normally, when we get a 100% accuracy on a train set, it might be considered to 
 3. Open the 'zip' file of the augmented images. 
 4. Install the required libraries. (written in 'requirements.txt' in this repo)
 5. Run the [Texture_classifier_for_Print_or_Photo.ipynb](https://github.com/ezgigm/cyberdata_capstone/blob/main/Texture_classifier_for_Print_or_Photo.ipynb) notebook for anti-spoofing part. 
-6. Run the [Arcface_modeling.ipynb](https://github.com/ezgigm/cyberdata_capstone/blob/main/Arcface_modeling.ipynb) for the ArcFace model. 
+6. Run the [Arcface_test.ipynb](https://github.com/ezgigm/cyberdata_capstone/blob/main/Arcface_test.ipynb) for the ArcFace model. 
 
 ### Repository Guide
 
@@ -134,7 +134,7 @@ Normally, when we get a 100% accuracy on a train set, it might be considered to 
 
   [Anti-spoofing](https://github.com/ezgigm/cyberdata_capstone/blob/main/Texture_classifier_for_Print_or_Photo.ipynb)
 
-  [ArcFace](https://github.com/ezgigm/cyberdata_capstone/blob/main/Arcface_modeling.ipynb)
+  [ArcFace](https://github.com/ezgigm/cyberdata_capstone/blob/main/Arcface_test.ipynb)
 
 - #### Deliverables
 
