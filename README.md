@@ -101,6 +101,9 @@ Confusion matrix shows the actual and predicted results of the model. False posi
 
 Normally, when we get a 100% accuracy on a train set, it might be considered to be overfitting, but in this project it can be 100% accuracy on a test set, because we checked the projection of our data and there was already a distinct separation between feature vectors of photos and prints. So, the prints and photos can be predicted perfectly. Also, LDA projections maximize the distances between different classes, it does this by maximizing the component class axes for class separation. In other words, it gets a more separate distribution between the classes on that axis. So, it performed well in this project. 
 
+### Roc Curve
+
+<img src="arcface_results_photos/Presentation5.pdf" width="400" height="300">
 
 ## Future Improvements
 
